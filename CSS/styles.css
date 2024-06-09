@@ -10,9 +10,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
-
 /* Body */
 
 html,
@@ -27,17 +24,9 @@ body {
 body {
     background-color: #1B203C;
     min-height: 100%;
-
 }
 
 
-img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: flex;
-    margin: 0 auto;
-}
 
 .banner-image {
     width: 100%;
@@ -51,7 +40,6 @@ img {
 /* HEADER: Navbar */
 
 nav {
-
     font-size: 2rem;
     display: flex;
     background-color: #1B203C;
@@ -412,30 +400,27 @@ nav img {
 
 /* Games - Best Sellers */
 
+.column {
+    width: 35rem;
+    padding: 0 30px;
+}
+
+.column img {
+    width: 100%;
+
+}
 
 
 
 .games {
+    align-items: center;
+    justify-content: space-between;
     color: white;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    width: 80%;
-}
-
-.column {
-    width: 100%;
-    max-width: 33%;
-    float: left;
-    padding-top: 30px;
-    padding-right: 60px;
-    padding-bottom: 8rem;
-    padding-left: 60px;
-}
-
-.column img {
-    box-shadow: 0 0 60px #241799;
+    max-width: 1570px;
 }
 
 .column img:hover {
@@ -444,6 +429,7 @@ nav img {
 }
 
 h2 {
+
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -575,7 +561,7 @@ h3 {
 
 
     font-size: 2.5rem;
-    font-weight: 700;
+
     letter-spacing: 5px;
     padding: 20px;
 
@@ -700,7 +686,7 @@ h3 {
 .paragraph p {
 
     font-size: 1.1rem;
-    font-family: "Roboto", sans-serif;
+
 
     letter-spacing: 2px;
     margin: 20px 0;
@@ -796,7 +782,6 @@ footer {
 
 .col p {
     font-size: 0.9rem;
-
     margin-top: 5px;
     margin-bottom: 2px;
 }
@@ -830,7 +815,6 @@ footer {
     color: white;
     letter-spacing: 1px;
     font-size: 0.9rem;
-
     margin-top: 5px;
 }
 
@@ -871,50 +855,38 @@ form button {
     text-align: center;
 }
 
+
+
 /* ----- Media Queries: Main Banner ----- */
 
 
 
-@media (min-width: 300px) and (max-width: 599px) {
-
-    .banner h1 {
-        font-size: 1.2rem;
-    }
-
+@media (max-width: 1198px) {
     .games {
-        width: 100%;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 0 10rem;
     }
 
-    .column {
-        max-width: 95%;
-        padding-left: auto;
-        padding: auto;
+    .column {}
+}
+
+@media (max-width: 1150px) {
+    .games {
+        width: 1050px;
+        padding: 0 6.5rem;
     }
 
-    .column img {
-        box-shadow: 0 0 30px #241799;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .column p {
-        font-size: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .btn {
-        max-width: 100%;
-        height: 60px;
-        font-size: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    .column {}
 }
 
 /* GAMES */
 
-@media (max-width: 600px) {
+/* @media (max-width:1048px) {
+
+} */
+
+@media (max-width: 1048px) {
 
 
     .banner h1 {
@@ -922,14 +894,13 @@ form button {
     }
 
     .games {
-        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
     }
 
-    .column {
-        display: inline-block;
-        width: 100%;
-        padding: 10px 10px;
-    }
+    .column {}
 
     .column img {
         box-shadow: 0 0 30px #241799;
@@ -949,19 +920,18 @@ form button {
     }
 }
 
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (max-width: 600px) {
 
     .banner h1 {
         font-size: 1.4rem;
     }
 
     .games {
-        width: 90%;
+        padding: 0 20px;
     }
 
     .column {
-        width: 80%;
-        padding: 20px 20px;
+        padding: 0px;
     }
 
     .column img {
@@ -980,75 +950,6 @@ form button {
     }
 
 }
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-
-    .banner h1 {
-        font-size: 1.5rem;
-    }
-
-    .games {
-        width: 80%;
-    }
-
-    .column {
-        width: 70%;
-        padding: 25px 30px;
-    }
-
-    .column img {
-        box-shadow: 0 0 50px #241799;
-    }
-
-    .column p {
-        font-size: 1.2rem;
-    }
-
-    .column h3 {
-        max-width: 75%;
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 1441px) {
-
-    .banner h1 {
-        font-size: 2rem;
-    }
-
-    .games {
-        width: 80%;
-    }
-
-    .column {
-        width: 50%;
-        padding: 30px 50px;
-    }
-
-    .column img {
-        box-shadow: 0 0 90px #241799;
-    }
-
-    .column p {
-        font-size: 1.8rem;
-    }
-
-    .column h2 {
-        max-width: 60%;
-        font-size: 2rem;
-    }
-
-    .btn {
-        max-width: 100%;
-        height: 80px;
-        font-size: 2.2rem;
-        padding: 35px 70px 70px 70px;
-    }
-
-}
-
-
-
 
 
 
@@ -1624,11 +1525,3 @@ form button {
         width: 70%;
     }
 }
-
-
-
-
-
-
-
-/* ---------------------------- SPACE WARS: BUY PAGE --------------------------- */
