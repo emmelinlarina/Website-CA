@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Sansation-Light';
-    src: url(Fonts/Sansation-Light.ttf);
+    src: url(/Fonts/Sansation-Light.ttf);
 
 }
 
@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: 'Sansation-Bold';
-    src: url(Fonts/Sansation-Bold.ttf);
+    src: url(/Fonts/Sansation-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Florence-Sans';
-    src: url(Fonts/Florence\ Sans.otf);
+    src: url(/Fonts/Florence\ Sans.otf);
 }
 
 /* Body */
