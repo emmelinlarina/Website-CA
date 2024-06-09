@@ -17,23 +17,11 @@ body {
 /* These are marked with an underscore: */
 
 
-@font-face {
-    font-family: 'Sansation-Light';
-    src: url(/Fonts/Sansation-Light.ttf);
 
-}
 
 /* Fonts */
 
-@font-face {
-    font-family: 'Sansation-Bold';
-    src: url(/Fonts/Sansation-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Florence-Sans';
-    src: url(/Fonts/Florence\ Sans.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Body */
 
@@ -43,11 +31,12 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     background-color: #1B203C;
-    font-family: "Sansation-Light";
+
     min-height: 100%;
 }
 
@@ -64,7 +53,6 @@ img {
 /* HEADER: Navbar */
 
 nav {
-    font-family: "Florence-Sans";
     font-size: 2rem;
     display: flex;
     background-color: #1B203C;
@@ -412,7 +400,6 @@ nav img {
     background: linear-gradient(to right, #4570a0, #27298b);
     color: white;
     font-size: 1.25rem;
-    font-family: 'Sansation-bold';
     letter-spacing: 5px;
     height: 40%;
 
@@ -455,7 +442,6 @@ nav img {
 
 
 .col-1 button.pre {
-    font-family: 'Sansation-Light';
     font-size: 1.5rem;
     display: flex;
     color: white;
@@ -486,7 +472,6 @@ nav img {
     margin-bottom: 10px;
 
     color: white;
-    font-family: 'sansation-light';
     font-size: 1.7rem;
     letter-spacing: 2.5px;
 }
@@ -859,7 +844,6 @@ footer {
     padding: 10px 0 5px;
     border: 125px;
     font-size: 1.1rem;
-    font-family: 'sansation-light';
     line-height: 20px;
 }
 
@@ -880,7 +864,6 @@ footer {
 }
 
 .col h3 {
-    font-family: 'sansation-bold';
     width: fit-content;
     margin-bottom: 20px;
     position: relative;
@@ -893,12 +876,12 @@ footer {
     margin-left: 2%;
     margin-right: 2%;
     line-height: 2px;
-    font-family: 'sansation-bold';
+
     letter-spacing: 1px;
 }
 
 .col h5 {
-    font-family: 'sansation-bold';
+
     font-size: 0.85rem;
     margin-top: 20px;
     letter-spacing: 0.5px;
@@ -906,7 +889,7 @@ footer {
 
 .col p {
     font-size: 0.9rem;
-    font-family: 'sansation-light';
+
     margin-top: 5px;
     margin-bottom: 2px;
 }
@@ -940,7 +923,6 @@ footer {
     color: white;
     letter-spacing: 1px;
     font-size: 0.9rem;
-    font-family: 'sansation-light';
     margin-top: 5px;
 }
 
@@ -956,7 +938,6 @@ form {
 
 form input {
     color: #d3d3d3;
-    font-family: 'sansation-light';
     max-width: 120%;
     background: transparent;
     border: 0;
