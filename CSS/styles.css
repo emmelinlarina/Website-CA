@@ -1,0 +1,1644 @@
+/* Use import to split up your CSS into manageable chunks */
+@import url("./_reset.css");
+/* Files that are only needed to be imported are called partials */
+/* These are marked with an underscore: */
+
+
+@font-face {
+    font-family: 'Sansation-Light';
+    src: url(/Fonts/Sansation-Light.ttf);
+
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Sansation-Bold';
+    src: url(/Fonts/Sansation-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Florence-Sans';
+    src: url(/Fonts/Florence\ Sans.otf);
+}
+
+/* Body */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #1B203C;
+    font-family: "Sansation-Light";
+    min-height: 100%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+
+}
+
+/* HEADER: Navbar */
+
+nav {
+    font-family: "Florence-Sans";
+    font-size: 2rem;
+    display: flex;
+    background-color: #1B203C;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav img {
+    max-width: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-left: 45px;
+    padding: 0;
+
+}
+
+/* distance between*/
+
+.menu li {
+    margin-left: 1rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-size: 0.8rem;
+
+}
+
+.menu li i {
+    color: white;
+    text-decoration: none;
+
+
+}
+
+.menu li a:hover {
+    color: #588dff;
+}
+
+/* Media Navbar*/
+
+@media (min-width: 2560px) {
+    nav {
+        font-size: 2rem;
+        padding: 3rem 4rem;
+        max-height: 100px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 100%;
+        padding-top: 4px;
+        padding-left: 110px
+    }
+
+    .menu li a {
+        padding: 2rem 3rem;
+        font-size: 2rem;
+    }
+
+    .menu li i {
+        padding-left: 0.3rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+
+
+    nav img {
+        max-width: 150px;
+        left: 2rem;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 2559px) {
+    nav {
+        font-size: 1.3rem;
+        padding: 1.25rem 2.5rem;
+        max-height: 70px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 100%;
+        padding-top: 4px;
+        padding-left: 3px;
+    }
+
+    .menu li a {
+        padding: 2rem 1rem;
+        font-size: 1.8rem;
+    }
+
+    .menu li i {
+        padding-left: 0.5rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    nav img {
+        max-width: 110px;
+        left: 1.25rem;
+        top: 2.1rem;
+    }
+}
+
+
+@media (max-width: 1099px) {
+
+    nav {
+        padding-right: 7rem;
+        padding-left: 2rem;
+        font-size: 2rem;
+        max-height: 85px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 100%;
+        padding-top: 4px;
+        margin-left: 100px;
+    }
+
+    .menu li {
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .menu li a {
+        padding: 0.8rem;
+        font-size: 1.8rem;
+    }
+
+    .menu li i {
+        padding-left: 0.3rem;
+        padding: 0.15rem;
+        font-size: 2rem;
+    }
+
+
+    nav img {
+        max-width: 85px;
+        top: 2rem;
+        left: 2rem;
+
+    }
+
+    .menu-icon:hover {
+        color: #588dff;
+    }
+
+    .menu.icon {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        padding: 1rem;
+        cursor: pointer;
+
+    }
+
+}
+
+@media (min-width: 421px) and (max-width: 700px) {
+    nav {
+        padding-right: 8rem;
+        padding-left: 2rem;
+        font-size: 2rem;
+        max-height: 85px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 100%;
+        padding-top: 4px;
+        padding-right: 50px;
+    }
+
+    .menu li {
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li a {
+        padding: 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .menu li i {
+        padding-right: 5rem;
+        padding: 0.3rem;
+        font-size: 1.9rem;
+    }
+
+
+    nav img {
+        max-width: 80px;
+        top: 2.4rem;
+        left: 0.5rem;
+
+    }
+
+    .menu-icon:hover {
+        color: #588dff;
+    }
+
+}
+
+@media (min-width: 381px) and (max-width: 420px) {
+    nav {
+        display: inline-block;
+        padding-right: 8rem;
+        padding-left: 3rem;
+        font-size: 2rem;
+        max-height: 85px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 100%;
+        padding-top: 4px;
+        padding-right: 40px
+    }
+
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li a {
+        padding-left: 0rem;
+        font-size: 1.4rem;
+    }
+
+    .menu li i {
+        padding: 0.5rem;
+        font-size: 1.7rem;
+    }
+
+
+    nav img {
+        max-width: 75px;
+        top: 2.4rem;
+        left: 1.2rem;
+
+    }
+
+    .menu-icon:hover {
+        color: #588dff;
+    }
+
+}
+
+@media (max-width: 380px) {
+    nav {
+        padding-right: 8rem;
+        padding-left: 3rem;
+        font-size: 1rem;
+        max-height: 65px;
+    }
+
+    .menu {
+        align-items: center;
+        width: 100%;
+        padding-top: 1px;
+        padding-right: 50px
+    }
+
+    .menu li {
+        margin-left: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li a {
+        padding-left: 0rem;
+        padding-right: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .menu li i {
+        padding: 0.1rem;
+        left: 2rem;
+        font-size: 1.5rem;
+    }
+
+
+    nav img {
+        max-width: 55px;
+        top: 1.7rem;
+        left: 0.7rem;
+
+    }
+
+    .menu-icon:hover {
+        color: #588dff;
+    }
+
+}
+
+/* Main: Banner */
+
+.banner {
+    font-family: "Sansation-Light";
+    font-size: 0.6rem;
+    background-color: #1B203C;
+    color: white;
+    display: block;
+    width: 100%;
+
+}
+
+.banner h1 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+/* Games - Best Sellers */
+
+
+
+
+.games {
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.column {
+    width: 100%;
+    max-width: 33%;
+    float: left;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-bottom: 8rem;
+    padding-left: 60px;
+}
+
+.column img {
+    box-shadow: 0 0 60px #241799;
+}
+
+.column img:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+h2 {
+    font-family: 'Sansation-Light';
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Sansation-Light';
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.column p {
+    font-family: 'Sansation-Bold';
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+
+
+.column button {
+    font-family: 'Sansation-Light';
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    max-width: 60%;
+    border: solid #d3d3d3;
+    background-color: #1B203C;
+    border-width: thin;
+    border-radius: 25px;
+    box-shadow: 0 0 60px #241799;
+}
+
+.column button:hover {
+    cursor: pointer;
+    color: #8f8f8f;
+}
+
+/* Mid */
+
+.line {
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    margin-top: 23rem;
+    border-top-width: 1px;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+    text-align: center;
+}
+
+/* show more */
+
+.line p {
+    color: rgb(221, 221, 221);
+    font-size: 0.7rem;
+}
+
+.line p:hover {
+
+    color: #868686;
+}
+
+/* Discover More Games Here */
+
+.discover {
+    color: rgb(231, 231, 231);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 80%;
+    max-width: 10%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px 8px;
+    height: 70px;
+
+    border: solid rgb(26, 26, 26);
+    border-width: thin;
+    border-radius: 20px;
+    background-color: #516377;
+    box-shadow: 0 0 30px #21236d;
+}
+
+.discover:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    box-shadow: 0 0 50px #221c77;
+}
+
+/* The Universe of Games: BASE */
+
+.universe {
+    color: white;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.universe img {
+    max-width: 52px;
+    margin-left: 22em;
+    margin-bottom: -98px;
+
+}
+
+/* The Universe of Game */
+
+.universe h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    box-shadow: 0 0 50px #2a2579;
+}
+
+/* SELL AND BUY SAFELY*/
+
+.universe h2 {
+    color: rgb(224, 224, 224);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-top: -28px;
+    margin-bottom: 10rem;
+}
+
+/* MARKETPLACE */
+
+.btn {
+
+
+    font-size: 2.5rem;
+    font-family: 'Sansation-Bold';
+    letter-spacing: 5px;
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    max-width: 50%;
+    border-style: none;
+    border-radius: 35px;
+    background: linear-gradient(to right, #57708d, #283368);
+
+    box-shadow: 0 0 10px #1c1d58;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    box-shadow: 0 0 50px #221d6d;
+}
+
+/* Buy | Sell */
+
+.universe p {
+    font-size: 1.5rem;
+    font-family: 'Sansation-Light';
+    color: #cccccc;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* words beside each other */
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.universe p:hover {
+    filter: brightness(80%);
+}
+
+/* Trust Bar */
+
+.trustbar {
+    display: flex;
+    background-color: #2d3350;
+    filter: opacity(98%);
+    align-items: center;
+    max-width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px;
+}
+
+.buysell {
+    padding: 0,
+}
+
+.download {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.download img {
+    max-width: 100%;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.download p {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Sansation-Light';
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+/* END */
+
+.paragraph {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 10px auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    max-width: 40%;
+
+
+}
+
+.paragraph h1 {
+    font-family: 'Sansation-Bold';
+    font-size: 1.8rem;
+
+    margin: 20px 0;
+    letter-spacing: 10px;
+    text-align: left;
+    padding: 20px;
+}
+
+.paragraph p {
+    font-family: 'Sansation-Light';
+    font-size: 1.1rem;
+
+
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.paragraph img {
+    max-width: 100%;
+    width: 280px;
+    margin: 5px;
+}
+
+.signup {
+    max-width: 100%;
+    font-family: 'Sansation-Light';
+    font-size: 1.25rem;
+    color: white;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+
+
+
+    border-radius: 50px;
+    box-shadow: 0 0 15px #281e7c;
+
+
+}
+
+.signup li {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #57708d, #283368);
+    color: white;
+    padding: 10px 0 5px;
+    border: 125px;
+    font-size: 1.1rem;
+    font-family: 'sansation-light';
+    line-height: 20px;
+}
+
+
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 15%;
+    padding: 10px;
+}
+
+.col h3 {
+    font-family: 'sansation-bold';
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.col h4 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 2px;
+    font-family: 'sansation-bold';
+    letter-spacing: 1px;
+}
+
+.col h5 {
+    font-family: 'sansation-bold';
+    font-size: 0.85rem;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.col p {
+    font-size: 0.9rem;
+    font-family: 'sansation-light';
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+}
+
+.col img {
+    max-width: 100%;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    padding: 0;
+    text-align: left;
+}
+
+.col ul {
+    padding: 0;
+}
+
+
+.col ul li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-family: 'sansation-light';
+    margin-top: 5px;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+
+form input {
+    color: #d3d3d3;
+    font-family: 'sansation-light';
+    max-width: 120%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    text-align: left;
+}
+
+form button {
+    max-width: 100%;
+    font-size: 1.2rem;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    opacity: 50%;
+}
+
+.social-icons i {
+    max-width: 100%;
+    width: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* ----- Media Queries: Main Banner ----- */
+
+
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+    .banner h1 {
+        font-size: 1.2rem;
+    }
+
+    .games {
+        width: 100%;
+    }
+
+    .column {
+        max-width: 95%;
+        padding-left: auto;
+        padding: auto;
+    }
+
+    .column img {
+        box-shadow: 0 0 30px #241799;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column p {
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn {
+        max-width: 100%;
+        height: 60px;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* GAMES */
+
+@media (max-width: 600px) {
+
+
+    .banner h1 {
+        font-size: 1.25rem;
+    }
+
+    .games {
+        width: 90%;
+    }
+
+    .column {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .column img {
+        box-shadow: 0 0 30px #241799;
+    }
+
+    .column p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        max-width: 100%;
+        height: 80px;
+        font-size: 1.6rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .banner h1 {
+        font-size: 1.4rem;
+    }
+
+    .games {
+        width: 90%;
+    }
+
+    .column {
+        width: 80%;
+        padding: 20px 20px;
+    }
+
+    .column img {
+        box-shadow: 0 0 35px #241799;
+    }
+
+    .column p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        max-width: 100%;
+        height: 80px;
+        font-size: 1.8rem;
+        padding: 30px 50px 60px 50px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .games {
+        width: 80%;
+    }
+
+    .column {
+        width: 70%;
+        padding: 25px 30px;
+    }
+
+    .column img {
+        box-shadow: 0 0 50px #241799;
+    }
+
+    .column p {
+        font-size: 1.2rem;
+    }
+
+    .column h3 {
+        max-width: 75%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1441px) {
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .games {
+        width: 80%;
+    }
+
+    .column {
+        width: 50%;
+        padding: 30px 50px;
+    }
+
+    .column img {
+        box-shadow: 0 0 90px #241799;
+    }
+
+    .column p {
+        font-size: 1.8rem;
+    }
+
+    .column h2 {
+        max-width: 60%;
+        font-size: 2rem;
+    }
+
+    .btn {
+        max-width: 100%;
+        height: 80px;
+        font-size: 2.2rem;
+        padding: 35px 70px 70px 70px;
+    }
+
+}
+
+
+
+
+
+
+/* ----- Media Queries: Mid -----*/
+
+
+@media (min-width: 300px) and (max-width: 599px) {
+    .line {
+        visibility: hidden;
+    }
+
+    .discover {
+
+        font-size: 0.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -70px;
+        max-width: 65%;
+        height: auto;
+        padding: 5px;
+        letter-spacing: 0.5px;
+        position: relative;
+    }
+}
+
+/* move discover button up */
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+    .discover {
+
+        font-size: 0.8rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        max-width: 65%;
+        height: auto;
+        padding: 5px;
+        letter-spacing: 0.5px;
+        position: relative;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .line {
+        visibility: hidden;
+    }
+
+    .discover {
+
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        max-width: 65%;
+        height: 60px;
+        padding: 5px 10px;
+        letter-spacing: 0.75px;
+        position: relative;
+
+
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .line {
+        visibility: hidden;
+    }
+
+
+
+    .discover {
+
+        font-size: 0.8rem;
+        margin-left: 75%;
+        max-width: 15%;
+        padding: 6px 12px;
+        letter-spacing: 1px;
+
+
+    }
+
+
+}
+
+@media (min-width: 1441px) {
+    .line {
+        visibility: hidden;
+    }
+
+
+}
+
+
+
+
+/* ---- Media Queries: UOG BASE -----*/
+
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+    .universe {
+        margin-top: 5rem;
+    }
+
+    .universe img {
+        max-width: 44px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .universe h1 {
+        font-size: 1.6rem;
+        margin-top: 0.6rem;
+    }
+
+    .universe h2 {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        margin-bottom: 5rem;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .universe {
+        margin-top: 8rem;
+    }
+
+    .universe img {
+        max-width: 54px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    .universe h1 {
+        font-size: 2.8em;
+        margin-top: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .universe h2 {
+        font-size: 1.4rem;
+        margin-top: 0.2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .universe {
+        margin-top: 8rem;
+    }
+
+    .universe img {
+        visibility: hidden;
+    }
+
+    .universe h1 {
+        font-size: 2.8em;
+        margin-top: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .universe h2 {
+        font-size: 1.4rem;
+        margin-top: 0.2rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media (min-width: 1441px) {
+
+    .universe {
+        margin-top: 18rem;
+    }
+
+    .universe img {
+        visibility: hidden;
+    }
+
+    .universe h1 {
+        font-size: 5em;
+        margin-top: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .universe h2 {
+        font-size: 2rem;
+        margin-top: 0.2rem;
+        margin-bottom: 10rem;
+    }
+}
+
+
+
+/* ---- Media Queries: MARKETPLACE -----*/
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+    .universe h3 {
+        font-size: 1.4rem;
+        height: 60px;
+        max-width: 80%;
+        margin-bottom: 0;
+    }
+
+    .universe p {
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .buysell {
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .universe h3 {
+        font-size: 1.6rem;
+        height: 70px;
+        max-width: 50%;
+        margin-bottom: 0;
+        padding: 21px;
+    }
+
+    .universe p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .buysell {
+        padding: 0;
+        margin: 0;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .universe h3 {
+        font-size: 2.2rem;
+        height: 75px;
+        max-width: 45%;
+        margin-bottom: 0;
+        padding: 18px;
+    }
+
+    .universe p {
+        font-size: 1rem;
+        margin-bottom: 150px;
+    }
+}
+
+
+@media (min-width: 1441px) {
+
+    .universe h3 {
+        font-size: 3rem;
+        height: 125px;
+        max-width: 40%;
+        margin-bottom: 0;
+        padding: 35px;
+    }
+
+    .universe p {
+        font-size: 1.3rem;
+        margin-bottom: 200px;
+    }
+}
+
+
+
+
+/* ---- Media Queries: TRUSTBAR -----*/
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+    .download {
+        visibility: hidden;
+    }
+
+    .trustbar {
+        visibility: hidden;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .download {
+        visibility: hidden;
+    }
+
+    .trustbar {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .trustbar {
+        height: 90px;
+    }
+
+    .download img {
+        width: 150px;
+        height: 55px;
+    }
+
+    .download p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (min-width: 1441px) {
+
+    .trustbar {
+        height: 90px;
+    }
+
+    .download img {
+        width: 150px;
+        height: 55px;
+    }
+
+    .download p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* ---- Media Queries: INFO -----*/
+
+@media (min-width: 300px) and (max-width: 627px) {
+
+    .paragraph {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragraph img {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 80px;
+    }
+
+    .signup {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75%;
+        max-height: 100%;
+        font-size: 1rem;
+
+        box-shadow: 0 0 30px #262063;
+        letter-spacing: 1.1px;
+        margin-bottom: 100px;
+    }
+
+    .paragraph h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 1.85rem;
+    }
+
+    .paragraph p {
+        font-family: 'Sansation-Light';
+        font-size: 1.2rem;
+
+
+        letter-spacing: 2px;
+        margin: 20px 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: 628px) and (max-width: 1023px) {
+    .paragraph {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paragraph img {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+        width: 90px;
+        margin-left: 6%;
+    }
+
+    .signup {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
+        max-height: 100%;
+        font-size: 1.2rem;
+
+        box-shadow: 0 0 30px #262063;
+        letter-spacing: 2px;
+        margin-bottom: 100px;
+    }
+
+    .paragraph h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 40px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .paragraph p {
+        font-family: 'Sansation-Light';
+        font-size: 1.6rem;
+
+
+        letter-spacing: 2px;
+        margin: 20px 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .paragraph {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+
+    .paragraph img {
+        margin-top: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+        width: 90px;
+        margin-left: 6%;
+    }
+
+    .signup {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        max-height: 100%;
+        font-size: 1.3rem;
+
+        box-shadow: 0 0 30px #262063;
+        letter-spacing: 2px;
+        margin-bottom: 100px;
+    }
+
+    .paragraph h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 40px;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .paragraph p {
+        font-family: 'Sansation-Light';
+        font-size: 1.6rem;
+
+
+        letter-spacing: 2px;
+        margin: 20px 0;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1441px) {
+
+    .paragraph {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .paragraph img {
+        visibility: hidden;
+    }
+
+    .signup {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        max-height: 100%;
+        font-size: 1.5rem;
+
+        box-shadow: 0 0 30px #262063;
+        letter-spacing: 2px;
+        margin-bottom: 100px;
+    }
+
+    .paragraph h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: 160px;
+        margin-right: auto;
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .paragraph p {
+        font-family: 'Sansation-Light';
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+/* ---- Media Queries: FOOTER -----*/
+
+@media (min-width: 300px) and (max-width: 429px) {
+
+    .col {
+        flex-basis: 100%;
+        margin-left: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 612px) {
+    .col {
+        flex-basis: 49%;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+
+    .row {
+        width: 98%;
+    }
+}
+
+
+
+@media (min-width: 1441px) {
+
+    .row {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+/* ---------------------------- SPACE WARS: BUY PAGE --------------------------- */
